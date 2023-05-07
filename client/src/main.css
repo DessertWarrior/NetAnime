@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translate(20px);
+}
+.card img{
+    height:500px;
+    width:350px;
+}
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cardItem img {
+    height:350px;
+    width:250px;
+}
+.image-container {
+    height:500px;
+    width:350px;
+    margin:20px;
+    position: relative;
+    display: inline-block;
+}
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 70%);
+    z-index: 1;
+}
+.refinementMenu {
+    padding:30px;
+    width: 20%;
+    font-size: 30px;
+    min-height:1000px;
+}
+.contents {
+    width: 80%;
+}
+.cardItem {
+    width: 280px;
+    /* height: 600px;
+    width: 340px; */
+}
+.genre
+{
+    transform: translate(20px);
+    margin-top: 20px;
+}
+.fa-search {
+    cursor: pointer;
+    text-align:right;
+
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius: 10%;
+  }
+.fa-pen {
+    cursor: pointer;
+    text-align:right;
+    background-color: wheat;
+    color:black;
+    padding:10px;
+    box-shadow: 3px 3px 5px coral;
+    border: 1px white solid;
+    border-radius: 10%;
+}
+.fa-save {
+    cursor: pointer;
+    text-align:right;
+    background-color: wheat;
+    color:black;
+    padding:10px;
+    box-shadow: 3px 3px 5px coral;
+    border: 1px white solid;
+    border-radius: 10%;
+}
+.fa-plus {
+    cursor: pointer;
+    text-align:right;
+
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius: 10%;
+}
+.fa-angle-right {
+    cursor: pointer;
+    text-align:right;
+
+    color:white;
+    padding:10px;
+    font-size:30px;
+    border-radius: 10%;
+}
+.fa-chevron-down {
+    cursor: pointer;
+    text-align:right;
+
+    color:white;
+    padding:10px;
+    font-size:30px;
+    border-radius: 10%;
+}
+.fa-trash {
+    cursor: pointer;
+    text-align:right;
+
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius: 10%;
+}
+.fa-plus:hover{
+    background-color: crimson;
+}
+.fa-trash:hover{
+    background-color: crimson;
+}

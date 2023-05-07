@@ -1,0 +1,6 @@
+###
+GET http://localhost:8000/api/animeList/catagory?category=Fantasy
+
+###
+GET https://gogoanime.consumet.stream/search?keyw=naruto
+###
