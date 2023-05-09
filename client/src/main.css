@@ -1,10 +1,14 @@
+
 body {
     background-color: black;
     scroll-behavior: smooth;
 }
 .title {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    transform: translate(20px);
+}
+.editBt {
+    right:0;
+    top:0;
 }
 .card img{
     height:500px;
@@ -13,40 +17,54 @@ body {
 .card {
     font-family: Arial, Helvetica, sans-serif;
 }
+.animeScore {
+    width:300px;
+}
+.cardItem {
+    width: 320px;
+    height: 530px;
+}
 .cardItem img {
-    height:350px;
-    width:250px;
+    height:400px;
+    width:280px;
+}
+#content-wrapper {
+   width:1200px;
 }
 .image-container {
-    height:500px;
-    width:350px;
+    padding: 20px;
     margin:20px;
     position: relative;
     display: inline-block;
+    background-color: black;
+    border-radius: 20px;
+    align-self: baseline;
+}
+.image-container img {
+    height:500px;
+    width:350px;
+   
 }
 .image-container::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 70%);
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 25%, rgba(0, 0, 0, 0.7) 90%);
     z-index: 1;
+    border-radius: 20px;
 }
 .refinementMenu {
-    padding:30px;
-    width: 20%;
-    font-size: 30px;
+   padding:20px;
     min-height:1000px;
 }
-.contents {
-    width: 80%;
+#contents {
+    width: 400px;
 }
-.cardItem {
-    width: 280px;
-    /* height: 600px;
-    width: 340px; */
+#updateForm {
+    width:400px;
+    width:1000px
 }
 .genre
 {
@@ -65,17 +83,6 @@ body {
 .fa-pen {
     cursor: pointer;
     text-align:right;
-    background-color: wheat;
-    color:black;
-    padding:10px;
-    box-shadow: 3px 3px 5px coral;
-    border: 1px white solid;
-    border-radius: 10%;
-}
-.fa-save {
-    cursor: pointer;
-    text-align:right;
-    background-color: wheat;
     color:black;
     padding:10px;
     box-shadow: 3px 3px 5px coral;
@@ -97,7 +104,7 @@ body {
 
     color:white;
     padding:10px;
-    font-size:30px;
+    font-size:20px;
     border-radius: 10%;
 }
 .fa-chevron-down {
@@ -106,7 +113,7 @@ body {
 
     color:white;
     padding:10px;
-    font-size:30px;
+    font-size:20px;
     border-radius: 10%;
 }
 .fa-trash {
@@ -119,8 +126,10 @@ body {
     border-radius: 10%;
 }
 .fa-plus:hover{
+    transition: background-color 0.5s ease;
     background-color: crimson;
 }
 .fa-trash:hover{
+    transition: background-color 0.5s ease;
     background-color: crimson;
 }
