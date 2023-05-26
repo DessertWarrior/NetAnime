@@ -1,4 +1,4 @@
-# NetAnime | Anime Search Engine | Full Stack Application
+# NetAnime | Anime Search Engine
 
 This is a full stack application that displays a gallery of anime that aired in April 2023. The front end is built using Bootstrap and React, while the back end is built with Express. The data is fetched from a database and dynamically present the changes on the webpage.
 
