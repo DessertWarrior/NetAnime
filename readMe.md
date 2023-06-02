@@ -44,10 +44,17 @@ This is a full stack application that displays a gallery of anime that aired in 
 
 ## How to Run the Application
 
-1. Clone this repository.
+1. Clone this repository.[NetAnime](https://github.com/DessertWarrior/NetAnime.git)
 2. Install the dependencies using npm install.
 3. Start the development server using npm start.
 4. start your front end page using npm run dev, and ctrl + click on the server domain.
+```bash
+cd server
+npm install
+cd ..
+cd client
+npm install
+```
 
 ## Improvements
 
