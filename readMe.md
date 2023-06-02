@@ -49,7 +49,7 @@ This is a full stack application that displays a gallery of anime that aired in 
 3. Start the development server using npm start.
 4. start your front end page using npm run dev, and ctrl + click on the server domain.
 
-## IImprovements
+## Improvements
 
 - Given the 2-day timeframe of the project, there were limitations on the features that could be implemented. There is room for improvement in terms of functionality and UI/UX design.
 - The collapse transition for the category section could be smoother. This is because the application uses Bootstrap, which relies on default CSS styles.
