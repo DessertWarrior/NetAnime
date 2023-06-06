@@ -1,5 +1,4 @@
 function Category(props){
-    console.log(props.genres)
     let checked;
     if (!props.genres[props.category])
         checked = false;

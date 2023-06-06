@@ -1,0 +1,12 @@
+version: "3"
+services:
+  pg-docker:
+    image: postgres
+    container_name: pg-docker
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=anime
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql

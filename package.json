@@ -1,0 +1,27 @@
+{
+  "name": "react-mvp",
+  "version": "1.0.0",
+  "description": "## Tech Stack",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run dev --prefix ./client",
+    "server": "npm run dev --prefix ./server",
+    "packages": "npm install && concurrently \"npm install --prefix ./client\" \"npm install --prefix ./server\"", 
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DessertWarrior/react-MVP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DessertWarrior/react-MVP/issues"
+  },
+  "homepage": "https://github.com/DessertWarrior/react-MVP#readme",
+  "dependencies": {
+    "concurrently": "^8.1.0",
+    "uglify-js": "^3.17.4"
+  }
+}

@@ -15,6 +15,7 @@ dist-ssr
 package-lock.json
 request.http
 
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

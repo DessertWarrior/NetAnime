@@ -1,7 +1,7 @@
-
 body {
     background-color: black;
     scroll-behavior: smooth;
+    user-select: none;
 }
 .title {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,19 +14,66 @@ body {
     height:500px;
     width:350px;
 }
+.errorTab{
+    text-align: center;
+    
+}
+.errorTab > h1{
+    font-size: 70px;
+}
 .card {
     font-family: Arial, Helvetica, sans-serif;
 }
 .animeScore {
     width:300px;
 }
+.btn-close{
+    position: absolute;
+    right: 0;
+    transform: translate(-30%,30%);
+}
+.loginAuthLabel {
+    font-size:0.7rem;
+    font-weight: 600;
+}
+#myConnect > a >svg{
+    block-size: 40px;
+}
+#signInAuthBt:hover{
+    box-shadow: 0 0 4px rgb(234, 0, 0);
+    transition: box-shadow .3s ease-in-out;
+}
+.modal-content{
+    width: 800px;
+    --netAnime-login-height:600px;
+    height:var(--netAnime-login-height);
+    transform: translateX(50%);
+}
+#loginForm > form > input[type='text'],input[type='password'] {
+    border: none;
+    outline: none;
+    width:250px;
+}
 .cardItem {
-    width: 320px;
-    height: 530px;
+    min-width: 300px;
+    max-width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow .3s ease-in-out;
+}
+#loginImage {
+    height:var(--netAnime-login-height);
+    width:400px;
 }
 .cardItem img {
     height:400px;
     width:280px;
+}
+.cardItem:hover{
+    /* border: 3px solid white; */
+    box-shadow: 0 0 10px white;
+    
 }
 #content-wrapper {
    width:1200px;
@@ -45,6 +92,11 @@ body {
     width:350px;
    
 }
+#refinementMenu.show{
+    animation: fadeInLeft .5s;
+    opacity: 1;
+    visibility: visible;
+}
 .image-container::before {
     position: absolute;
     top: 0;
@@ -54,13 +106,6 @@ body {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 25%, rgba(0, 0, 0, 0.7) 90%);
     z-index: 1;
     border-radius: 20px;
-}
-.refinementMenu {
-   padding:20px;
-    min-height:1000px;
-}
-#contents {
-    width: 400px;
 }
 #updateForm {
     width:400px;
