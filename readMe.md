@@ -49,6 +49,9 @@ This is a full stack application that displays a gallery of anime that aired in 
 2. Install the dependencies using npm run packages.
 3. Create docker images for docker by using docker-compose up -d
 4. Start the development server using npm start.
+
+### MAKE SURE TO SET A NEW BCRYPT PASSWORD AS CURRENTLY IT IS password1 in .authorization.key.
+
 ```bash
 npm run packages
 cd server
