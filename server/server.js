@@ -8,7 +8,7 @@ const fs = require("fs");
 const crypto = require("crypto");
 const cookie = require('cookie'); 
 
-const importUsers = fs.readFileSync('authorization.key','utf-8');
+const importUsers = fs.readFileSync('.authorization.key','utf-8');
 const users = JSON.parse(importUsers);
 console.log(users);
 dotenv.config();

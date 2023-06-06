@@ -7,6 +7,8 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-6610f2?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![JWT](https://img.shields.io/badge/JWT-0f0330?style=for-the-badge&logo=JSONWebTokens&logoColor=E06AE4)](https://jwt.io/)
+[![React-Router](https://img.shields.io/badge/React_Router-080B1A?style=for-the-badge&logo=ReactRouter&logoColor=D11B36)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
@@ -44,15 +46,15 @@ This is a full stack application that displays a gallery of anime that aired in 
 ## How to Run the Application
 
 1. Clone this repository. [NetAnime](https://github.com/DessertWarrior/NetAnime.git)
-2. Install the dependencies using npm install.
-3. Start the development server using npm start.
-4. start your front end page using npm run dev, and ctrl + click on the server domain.
+2. Install the dependencies using npm run packages.
+3. Create docker images for docker by using docker-compose up -d
+4. Start the development server using npm start.
 ```bash
+npm run packages
 cd server
-npm install
+docker-compose up -d
 cd ..
-cd client
-npm install
+npm start
 ```
 
 ## Improvements
@@ -61,6 +63,15 @@ npm install
 - The collapse transition for the category section could be smoother. This is because the application uses Bootstrap, which relies on default CSS styles.
 The login function has not yet been implemented. In the future, it would be necessary to use cookies to store user account information.
 - An authorization feature could be added, where if a user enters an admin account, they would be granted permission to make changes and send them to the server. If a user is not an admin, they would be redirected to the register form. All features would still be available, but changes would not be able to modify the database. Instead, modifications would be stored in a JSON file. Once the user logs in, these changes would be reflected only to the specific user.
+
+## Updates
+
+### V.1.1
+
+- Added React routers for each card
+- Added JsonWebToken Authorization method.
+- Added Secured Authorization method for some routes
+- Improved UI/UX for some components.
 
 ## Conclusion
 
